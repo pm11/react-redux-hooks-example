@@ -31,4 +31,4 @@ const CounterComponent = () => {
   )
 }
 
-export default withRouter(CounterComponent)
+export default withRouter(React.memo(CounterComponent))
