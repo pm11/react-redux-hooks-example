@@ -10,6 +10,9 @@
       "es2018",
       "dom"
     ],
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "sourceMap": true
   },
   "include": [
