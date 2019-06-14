@@ -4,6 +4,7 @@ const autoprefixer = require("autoprefixer")
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 const MiniCssExtractPlugin = require("mini-css-extract-plugin")
 const path = require("path")
+const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin")
 
 module.exports = (env, argv) => {
   const mode = process.env.NODE_ENV || "development"
@@ -23,7 +24,8 @@ module.exports = (env, argv) => {
         ".tsx",
         ".js",
         ".jsx"
-      ]
+      ],
+      plugins: [new TsconfigPathsPlugin()]
     },
     module: {
       rules: [
