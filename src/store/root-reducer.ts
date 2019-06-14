@@ -2,7 +2,7 @@ import { combineReducers } from 'redux'
 import { History } from 'history'
 import { RouterState, connectRouter } from 'connected-react-router'
 
-import { CounterState, countersReducers } from '../features/counter/widget'
+import { CounterState, countersReducers } from '@/features/counter/widget'
 
 export type ReducerState = {
   router: RouterState

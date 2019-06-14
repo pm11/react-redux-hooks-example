@@ -2,12 +2,12 @@ import * as React from 'react'
 import { Route, Switch } from 'react-router-dom'
 
 import * as style from './App.scss'
-import CounterPage from '../Routes/Counter/Counter'
+import Counter from '@/pages/Routes/Counter/Counter'
 
 const App = () => (
   <div className={style.container}>
     <Switch>
-      <Route exact path="/" component={CounterPage} />
+      <Route exact path="/" component={Counter} />
     </Switch>
   </div>
 )

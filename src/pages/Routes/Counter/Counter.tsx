@@ -3,12 +3,12 @@ import { useSelector, useDispatch } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { Statistic, Button } from 'semantic-ui-react'
 
-import { ReducerState } from '../../../store/root-reducer'
+import { ReducerState } from '@/store/root-reducer'
 import {
   incrementCounter,
   decrementCounter,
   resetCounter
-} from '../../../features/counter/widget'
+} from '@/features/counter/widget'
 import * as style from './Counter.scss'
 
 const CounterComponent = () => {
