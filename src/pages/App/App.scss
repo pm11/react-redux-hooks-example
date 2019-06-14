@@ -1,0 +1,17 @@
+.container {
+  margin: {
+    left: auto;
+    right: auto;
+    top: 30px;
+  };
+  max-width: $pageWidth;
+  padding: {
+    left: $paddingPageSide;
+    right: $paddingPageSide;
+  };
+
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
